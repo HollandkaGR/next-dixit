@@ -1,15 +1,11 @@
-'use client';
-
-import { useEffect } from 'react';
+import LongestUniqueCharSeqInString from '@components/assignments/LongestUniqueCharSeqInString';
 
 const Interview = () => {
-    useEffect(() => {
-        if (typeof window !== 'undefined') {
-            console.log('Component Did Mount'); // called once
-        }
-    }, []);
-
-    return <div>Hello</div>;
+    return (
+        <div className="flex flex-col gap-3">
+            <LongestUniqueCharSeqInString />
+        </div>
+    );
 };
 
 export default Interview;

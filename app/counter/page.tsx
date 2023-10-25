@@ -2,12 +2,12 @@
 
 import { ConfirmDialog } from '@components/ConfirmDialog';
 import { Button } from '@components/ui/button';
-import useStore from '@store/test';
+import useCounterStore from '@store/test';
 
 const Counter = () => {
-    const counter = useStore((state) => state.counter);
-    const increment = useStore((state) => state.increment);
-    const increase = useStore((state) => state.increase);
+    const counter = useCounterStore((state) => state.counter);
+    const increment = useCounterStore((state) => state.increment);
+    const increase = useCounterStore((state) => state.increase);
 
     const incrementByOne = () => {
         increment();

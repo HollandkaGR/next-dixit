@@ -2,16 +2,16 @@
 
 import { create } from 'zustand';
 
-interface BearState {
+interface Counter {
     counter: number;
     increase: (by: number) => void;
     increment: () => void;
 }
 
-const useStoreBase = create<BearState>()((set) => ({
+const useCounterStore = create<Counter>()((set) => ({
     counter: 0,
     increase: (by: number) => set((state) => ({ counter: state.counter + by })),
     increment: () => set((state) => ({ counter: (state.counter += 1) })),
 }));
 
-export default useStoreBase;
+export default useCounterStore;
