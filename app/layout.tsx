@@ -1,4 +1,4 @@
-import Navigation from '@components/navigation/Navigation';
+import Navigation from '@components/navigation/navigation';
 import { Toaster } from '@components/ui/toaster';
 import type { Metadata } from 'next';
 import { Open_Sans } from 'next/font/google';
