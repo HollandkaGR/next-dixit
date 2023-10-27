@@ -5,6 +5,7 @@ const Navigation = () => {
         { name: 'Home', path: '/' },
         { name: 'Interview', path: '/interview' },
         { name: 'Counter', path: '/counter' },
+        { name: 'Sudoku', path: '/sudoku' },
     ];
 
     return (

@@ -1,4 +1,5 @@
-import Navigation from '@components/navigation/navigation';
+import Navigation from '@components/navigation/Navigation';
+import { Toaster } from '@components/ui/toaster';
 import type { Metadata } from 'next';
 import { Open_Sans } from 'next/font/google';
 import './globals.css';
@@ -17,7 +18,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <section className="fixed left-0 top-0 right-0">
                     <Navigation />
                 </section>
-                <main className="pt-24 max-w-7xl mx-auto min-h-screen">{children}</main>
+                <main className="pt-24 max-w-7xl mx-auto min-h-screen h-screen">{children}</main>
+                <Toaster />
             </body>
         </html>
     );
